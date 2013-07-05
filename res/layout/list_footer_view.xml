@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.internal.ListFooterView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/text_footer_view_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_ptr_rotate" />
+        
+        <TextView
+        	android:id="@+id/text_footer_view"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="加载数据……"    
+        />
+    </LinearLayout>
+
+    <Button 
+    	android:id="@+id/btn_next_page"
+    	android:layout_width="150dp"
+    	android:layout_height="wrap_content"
+    	android:text="加载下一页" 
+    	android:layout_gravity="center"
+    	android:visibility="gone"
+    />
+</com.handmark.pulltorefresh.library.internal.ListFooterView>
